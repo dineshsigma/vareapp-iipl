@@ -1,0 +1,79 @@
+{
+    "context" :[
+        {
+            "vendor_name": "",
+            "vendor_info":{},
+            "items":[
+                {
+                    "product_name": "",
+                    "product_url": "",
+                    "product_id": "",
+                    "product_description": "",
+                    "cart_price": 190,
+                    "price": 200,
+                    "stock": 20,
+                    "quantity": 2,
+                    "message":"Product Price is changed"
+                },
+                {
+                    "product_name": "",
+                    "product_url": "",
+                    "product_id": "",
+                    "product_description": "",
+                    "cart_price": 200,
+                    "price": 200,
+                    "stock": 1,
+                    "quantity": 2,
+                    "message":"Stock Issue"
+                }
+            ],
+            "summary":{
+                "subtotal": 100,
+                "delivery_fee": 10,
+                "total": 110,
+                "quantity":4
+            }
+        },
+        {
+            "vendor_name": "",
+            "vendor_info":{},
+            "items":[
+                {
+                    "product_name": "",
+                    "product_url": "",
+                    "product_id": "",
+                    "product_description": "",
+                    "cart_price": 190,
+                    "price": 200,
+                    "stock": 20,
+                    "quantity": 2,
+                    "message":"Product Price is changed"
+                },
+                {
+                    "product_name": "",
+                    "product_url": "",
+                    "product_id": "",
+                    "product_description": "",
+                    "cart_price": 200,
+                    "price": 200,
+                    "stock": 1,
+                    "quantity": 2,
+                    "message":"Stock Issue"
+                }
+            ],
+            "summary":{
+                "subtotal": 100,
+                "delivery_fee": 10,
+                "total": 110,
+                "quantity":4
+            }
+        }
+  
+    ],
+    "summary":{
+                "subtotal": 100,
+                "delivery_fee": 10,
+                "total": 110,
+                "quantity":6
+            }
+  }

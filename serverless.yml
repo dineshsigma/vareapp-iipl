@@ -1,0 +1,92 @@
+service: vareapp-services
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  stage: dev
+  region: ap-south-1
+  profile: iipl
+
+
+functions:
+  auth:
+    handler: auth.handler
+    events:
+      - http: ANY /api/auth
+      - http: 'ANY /api/auth/{proxy+}'
+      
+  contact:
+    handler: contact.handler
+    events:
+      - http: ANY /api/contact-us
+      - http: 'ANY /api/contact-us/{proxy+}'
+
+  orders:
+    handler: order.handler
+    events:
+      - http: ANY /api/order
+      - http: 'ANY /api/order/{proxy+}'
+
+  Cart:
+    handler: cart.handler
+    events:
+      - http: ANY /api/cart
+      - http: 'ANY /api/cart/{proxy+}'
+  Product:
+    handler: product.handler
+    events:
+      - http: ANY /api/product
+      - http: 'ANY /api/product/{proxy+}'
+  Review:
+    handler: rate&reviews.handler
+    events:
+      - http: ANY /api/review
+      - http: 'ANY /api/review/{proxy+}'
+  Blog:
+    handler: blog.handler
+    events:
+      - http: ANY /api/blog
+      - http: 'ANY /api/blog/{proxy+}'
+  Staticpages:
+    handler: staticpages.handler
+    events:
+      - http: ANY /api/staticpages
+      - http: 'ANY /api/staticpages/{proxy+}'
+  messages:
+    handler: messages.handler
+    events:
+      - http: ANY /api/messages
+      - http: 'ANY /api/messages/{proxy+}'
+  follow:
+    handler: follow.handler
+    events:
+      - http: ANY /api/follow
+      - http: 'ANY /api/follow/{proxy+}'
+  ticket:
+    handler: ticket.handler
+    events:
+      - http: ANY /api/ticket
+      - http: 'ANY /api/ticket/{proxy+}'
+  rewards:
+    handler: rewards.handler
+    events:
+      - http: ANY /api/rewards
+      - http: 'ANY /api/rewards/{proxy+}'
+  voucher:
+    handler: voucher.handler
+    events:
+      - http: ANY /api/voucher
+      - http: 'ANY /api/voucher/{proxy+}'
+  promotion:
+    handler: promotions.handler
+    events:
+      - http: ANY /api/promotion
+      - http: 'ANY /api/promotion/{proxy+}'
+  vendor:
+    handler: vendor.handler
+    events:
+      - http: ANY /api/vendor
+      - http: 'ANY /api/vendor/{proxy+}'
+      
+plugins:
+  - serverless-offline
